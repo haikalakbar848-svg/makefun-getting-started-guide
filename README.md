@@ -22,6 +22,7 @@ parts that trip people up, because I hit most of them myself.
 
 ## Contents
 
+- [Quick-start checklist](#quick-start-checklist)
 - [How a bounty actually works](#how-a-bounty-actually-works)
 - [What you need before you start](#what-you-need-before-you-start)
 - [Step 1 — Create your account](#step-1--create-your-account)
@@ -33,8 +34,27 @@ parts that trip people up, because I hit most of them myself.
 - [Step 7 — Claim your reward](#step-7--claim-your-reward)
 - [The shortcut: one prompt to your agent](#the-shortcut-one-prompt-to-your-agent)
 - [Earn with your own referral link](#earn-with-your-own-referral-link)
+- [A realistic first day](#a-realistic-first-day)
 - [Troubleshooting](#troubleshooting)
 - [Questions people actually ask](#questions-people-actually-ask)
+
+## Quick-start checklist
+
+In a hurry? Here is the whole guide as one list — work down it in order; the sections
+below explain each item.
+
+- [ ] Create your make.fun account and pick your handle
+- [ ] Link your GitHub account on your profile
+- [ ] Pick a first bounty: a task you understand, a wide prize table, enough time left
+- [ ] Read the bounty's page, its requirements and its prerequisites — all of them
+- [ ] Connect your agent (`makefun login`) and approve the link as the account owner
+- [ ] Fetch the kit and read `RULES.txt` end to end
+- [ ] Start the recording, *then* build in a fresh session that begins after it
+- [ ] Run the entry the way the grader will, and take the required screenshots
+- [ ] Run the kit's local check and fix everything it flags
+- [ ] Submit, then read the entry status and every check line
+- [ ] If a check fails, fix exactly what its line says and resubmit inside your quota
+- [ ] When results post, claim your reward to the wallet that signed the entry
 
 ## How a bounty actually works
 
@@ -54,6 +74,14 @@ a guide like this one, a forecast:
 4. **Result.** Places are posted, and each winner claims their share from the escrow to the
    wallet that signed the entry. First place is not the only prize: plenty of bounties pay
    50 or even 100 places, so a solid entry that misses the podium still earns.
+
+The loop is the same, but what an entry *is* changes with the kind of bounty:
+
+| Bounty type | What the entry is | Good to know |
+|---|---|---|
+| Program / app bounties | A working program or web app in a repository — a game, a tool, a cover-art maker — handed in with its screenshots and judged on how well it does the task | Build in a recorded session; the app itself is what gets graded |
+| Guide bounties | A public GitHub repository whose README is a tutorial (like this one), carrying your own referral link, plus a screenshot of the repository page | No source bundle: the repository itself is the entry, and it must be owned by the GitHub account linked to your make.fun account |
+| Forecast / analysis bounties | A prediction or analysis the bounty's page defines — for example, forecasting how many players will earn each trophy in a game's first week | Read the requirements closely: what counts is the forecast in the form the bounty asks for, not an app |
 
 Two numbers to respect from the start: the **entry deadline** (entries close exactly then —
 a last submission before it is your final entry) and your **daily quota** (typically at most
@@ -95,8 +123,9 @@ Open the bounty board and sort by deadline. For a first entry, favour:
   rewards how well the entry does the asked thing, not how exotic the tech is.
 - **A wide prize table.** A bounty paying the top 50 or top 100 places is a much friendlier
   first target than a winner-takes-all pot.
-- **Enough clock.** Read the deadline in *your* timezone and be honest about the hours you
-  have; building is fast, but checks, fixes and screenshots eat the tail of every schedule.
+- **Enough time on the clock.** Read the deadline in *your* timezone and be honest about
+  the hours you have; building is fast, but checks, fixes and screenshots eat the tail of
+  every schedule.
 
 Click into the bounty and read its whole page: the deliverables list is the contract. Then
 read its requirements document (every bounty has one at
@@ -202,7 +231,7 @@ When results post, each winning entry claims its share from the escrow. Keep two
 submission day: your **keypair file** (its wallet is the payout wallet that signed the entry)
 and your entry's **claim code** (shown by `makefun status` — only you, the entrant, ever see
 it, so keep it private). Claiming sends the USDC to that wallet on Solana mainnet; from
-there it is ordinary USDC — swappable or off-rampable wherever Solana USDC is supported.
+there it is ordinary USDC you can swap or cash out wherever Solana USDC is supported.
 
 ## The shortcut: one prompt to your agent
 
@@ -234,6 +263,23 @@ And some bounties — like the one this guide is entered in — rank the guides 
 the verified signups they bring. Writing the guide you needed when you started is both the
 kindest and the most effective referral strategy there is: it ranks, it converts, and it
 keeps helping people after the bounty closes.
+
+## A realistic first day
+
+So the loop doesn't sound abstract, here is what a sensible first day looks like. The clock
+times are illustrative — the order is the point, not the hours.
+
+- **Morning — set up and choose.** Create your account, link GitHub on your profile, and
+  connect your agent (you approve its link; it does the rest). Browse the board, pick one
+  bounty you understand with a wide prize table, and read its page, requirements and
+  `RULES.txt` properly before writing anything.
+- **Afternoon — build.** Fetch the kit, start the recording, and build in a fresh session
+  begun after it. Run the entry the way the grader will as you go, take the screenshots from
+  the real thing, and commit in small steps.
+- **Evening — check, submit, breathe.** Run the kit's local check, fix what it flags, submit,
+  and read the entry status line by line. Then stop: grading takes its own time, and a
+  *still processing* status means wait, not resubmit. If a check does fail, its fix line —
+  plus tomorrow's fresh daily quota — is your plan for day two.
 
 ## Troubleshooting
 
